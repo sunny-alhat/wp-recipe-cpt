@@ -1,0 +1,192 @@
+/*
+Theme Name: Sunny Recipes
+Theme URI: http://example.com/sunny-recipes
+Tags: Bootstrap-5, light-weight, clean, customizable
+Author: Sunny Alhat
+Author URI: https://sunnyalhat.com
+Description: A sample theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+:root{
+    --cookie: "Cookie", serif;
+    --poppins: "Poppins", serif;
+    --orange1: #ffc048;
+    --orange2: #ff7629;
+    --black1: #485460;
+    --black2: #1e272e;
+}
+
+/* Fonts */
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--cookie);
+}
+h1{font-size: 60px;}
+h2{font-size: 45px;}
+h3{font-size: 30px;}
+h4{font-size: 25px;}
+h5{font-size: 22px;}
+h6{font-size: 18px;}
+
+html, body, div, p{
+    font-family: var(--poppins);
+}
+
+/* Navigation Bar */
+.navbar{
+    box-shadow: 0px 1px 20px rgba(203, 203, 203, 0.47);
+}
+#bswp-navbar .menu-item a{
+    text-decoration: none !important;
+    padding: 4px 10px;
+    color: rgb(113, 113, 113);
+}
+#bswp-navbar .menu-item a:hover{
+    color: rgb(19, 19, 19);
+}
+header{
+    margin-bottom: 60px;
+}
+.navbar-brand{
+    font-family: var(--cookie);
+    font-size: 35px;
+    color: var(--black2);
+}
+.navbar-brand:hover{
+    color: var(--black2);
+}
+
+
+/* Sidebar */
+.recipe-sidebar{
+    border-right: 1px solid rgb(232, 232, 232);
+}
+.recipe-sidebar h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.recipe-sidebar ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.recipe-sidebar a{
+    color: var(--black1);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 4px !important;
+}
+.recipe-sidebar a:hover{
+    text-decoration: underline;
+
+}
+
+/* Main Section */
+
+/* Archive Grid */
+.card-link{
+    text-decoration: none;
+    color: var(--black2);
+}
+.c-card:hover{
+    transform: scale(1.050);
+    transition-duration: 0.5s;
+}
+.c-card-body{
+    margin-bottom: 30px;
+}
+.c-card-body h3{
+    font-size: 35px;
+}
+.archive-featured-image{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.btn-read-recipe{
+    padding: 8px 16px;
+    background-color: var(--orange2);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.291);
+}
+.btn-read-recipe:hover{
+    background-color: #e86a20;
+}
+
+/* Recipe */
+.recipe-featured-image{
+    border-radius: 15px;
+    box-shadow: 0px 8px 12px rgba(209, 209, 209, 0.447);
+}
+.recipe-meta-date{
+    color: rgb(113, 113, 113);
+}
+.recipe-cat-name{
+    color: var(--orange2);
+    text-decoration: underline;
+    font-weight: 600;
+}
+.recipe-cat-name:hover{
+    color:  #e86a20;
+}
+.recipe{
+    color: var(--black1);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.post-navigation a{
+    padding: 8px 16px;
+    background-color: var(--orange2);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.291);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.post-navigation a:hover{
+    background-color: #e86a20;
+}
+
+/* Category page */
+.category-title{
+    display: block;
+    background-color: var(--black2);
+    color: white;
+    padding: 10px 20px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.364);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer{
+    margin-top: 60px;
+    background-color: var(--black2);
+    color: white;
+}
+footer h4{
+    font-size: 40px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+/* Mobile breakpoint */
+@media (max-width: 767.98px){
+    .recipe-sidebar{
+        border-right: none;
+        margin-bottom: 35px;
+    }
+}
